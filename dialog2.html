@@ -1,110 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
 
-                display:flex;
-                width:100%;
-                height:100%;
-                background-image: url('game-photos/true.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                align-items:center;
-            }
-            .positionEmpress{
-               
-                margin-left: 0px;
-                margin-top: 100px;
-            }
-            .positionPrince{
-                
-                margin-left: 700px;
-                margin-top: 100px; 
-            }
-.display {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:transparent;
-    color: #2C1C44;
-    font-size: 28px;
-    padding: 100px;
-    border-radius: 10px;
-    border: 3px solid #2C1C44;
-    width: 380px;
-    height: 250px;
-    text-align: center;
-}
-.Addbutton{
-                position:absolute;
-    transform: translate(-50%, -50%);
-    background-color:transparent;
-    color: #2C1C44;
-    font-size: 25px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 3px solid #2C1C44;
-    width: 120px;
-    height: 30px;
-    text-align: center;
-            }
-            .position1{
-            
-                position: absolute;
-                left: 0%;
-                bottom: 0%;
-                background-color:transparent;
-                font-size: 23px;
-                margin-bottom: 50px;
-                margin-left: 100px;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-image: url('game-photos/true.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+        }
+
+        .positionEmpress {
+
+            margin-left: 0px;
+            margin-top: 100px;
+        }
+
+        .positionPrince {
+
+            margin-left: 700px;
+            margin-top: 100px;
+        }
+
+        .display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: #2C1C44;
+            font-size: 28px;
+            padding: 100px;
+            border-radius: 10px;
+            border: 3px solid #2C1C44;
+            width: 380px;
+            height: 250px;
+            text-align: center;
+        }
+
+        .Addbutton {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: #2C1C44;
+            font-size: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 3px solid #2C1C44;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .position1 {
+
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            background-color: transparent;
+            font-size: 23px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
 
 
-            a{
-                color:#2C1C44;
-                text-decoration: none;
-                font-size: 30px; 
-            }
-            .position2{
-                text-align: right;
-                position: absolute;
-                right: 0%;
-                bottom: 0%;
-                margin-bottom: 40px;
-                margin-right: 100px;
-            } 
-        </style>
-    </head>
-    <body>
-        <div>
-            <img src = "game-photos/mother.jpg" class ="positionEmpress">  
-        </div>
-        <div>
-            <img src = "game-photos/princemedium.png" class="positionPrince"> 
-        </div>
-        <a href = "Enthrone.html" class="position2">Back to Reality</a>
-     
-        <div class="display" id="display"></div>
-        <button class="position1" id="Addbutton">Dialogue</button>
-        </div>
-        <script>
-                var display = document.getElementById('display');
-                var Addbutton = document.getElementById('Addbutton');
-                var i=0;
-    var dialogs = [
-        'Empress Wu: Hong, My son! My firstborn, my beloved son! Your birth was very difficult. Mama nearly died. You were such a cute baby! The most beautiful child in the world! Your birth also brought me tremendous benefits when I was competing for the post of Empress Consort.',
-        'Prince Hong: Once I was quite useful, hehe. Did you ever love me, mama?',
-        'Empress Wu: You are my beloved son! You look more like me. As a child you were talented at writing. I kept the poetry you wrote!',
-        'Prince Hong: Mama, yes, I remembered when I was a kid, you kissed me and praised me as pretty and clever. Mama, could we go back to those days? We had nice days…',
-        
-    ];
-        Addbutton.onclick = function() {
+        a {
+            color: #2C1C44;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .position2 {
+            text-align: right;
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            margin-bottom: 40px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="game-photos/mother.jpg" class="positionEmpress">
+    </div>
+    <div>
+        <img src="game-photos/princemedium.png" class="positionPrince">
+    </div>
+    <a href="Enthrone.html" class="position2">Back to Reality</a>
+
+    <div class="display" id="display"></div>
+    <button class="position1" id="Addbutton">Dialogue</button>
+    </div>
+    <script>
+        var display = document.getElementById('display');
+        var Addbutton = document.getElementById('Addbutton');
+        var i = 0;
+        var dialogs = [
+            'Empress Wu: Hong, My son! My firstborn, my beloved son! Your birth was very difficult. Mama nearly died. You were such a cute baby! The most beautiful child in the world! Your birth also brought me tremendous benefits when I was competing for the post of Empress Consort.',
+            'Prince Hong: Once I was quite useful, hehe. Did you ever love me, mama?',
+            'Empress Wu: You are my beloved son! You look more like me. As a child you were talented at writing. I kept the poetry you wrote!',
+            'Prince Hong: Mama, yes, I remembered when I was a kid, you kissed me and praised me as pretty and clever. Mama, could we go back to those days? We had nice days…',
+
+        ];
+        Addbutton.onclick = function () {
             display.innerText = dialogs[i];
             i++;
-        } 
-         </script>
-        <body>
-    </html>
+        }
+    </script>
+
+    <body>
+
+</html>
