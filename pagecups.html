@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		html,
+		body {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			background-image: url('game-photos/palace.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			align-items: center;
+		}
+
+		.cloverBox {
+			position: absolute;
+			top: 50%;
+			margin-top: -100px;
+			left: 50%;
+			margin-left: -200px;
+			width: 400px;
+			height: 400px;
+			transform: rotate(0deg);
+			animation: round 5s linear infinite forwards;
+		}
+
+		.cloverBox:hover {
+			animation-play-state: paused
+		}
+
+		@keyframes round {
+			from {
+				transform: rotate(0deg);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		.clover {
+			width: 50%;
+			height: 50%;
+			float: left;
+			transition: all .6s;
+			cursor: pointer;
+		}
+
+		.clover:hover {
+			transform: scale(0.8);
+		}
+
+		.c1 {
+			border-radius: 0 50% 0 50%;
+		}
+
+		.c2 {
+			border-radius: 50% 0 50% 0;
+		}
+
+		.c3 {
+			border-radius: 50% 0 50% 0;
+		}
+
+		.c4 {
+			border-radius: 0 50% 0 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="cloverBox">
+		<div class="clover c1">
+			<a href="Dialog3.html">
+				<img src="game-photos/goblet.png">
+			</a>
+		</div>
+		<div class="clover c2">
+			<a href="Dialog3.html">
+				<img src="game-photos/goblet.png">
+			</a>
+		</div>
+		<div class="clover c3">
+			<a href="Dialog3.html">
+				<img src="game-photos/goblet.png">
+			</a>
+		</div>
+		<div class="clover c4">
+			<a href="Dialog3.html">
+				<img src="game-photos/goblet.png">
+			</a>
+		</div>
+	</div>
+</body>
+
+
+</html>

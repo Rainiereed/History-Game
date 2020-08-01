@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+
+html,body {
+	display:flex;
+	width:100%;
+	height:100%;
+	background-image: url('game-photos/dream.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items:center;
+}
+
+          #aa{
+            height: auto;
+            width: 600px;
+            margin: auto;
+          }
+          .text{
+             font-size: 26px;
+          }
+          a{
+                color:#2C1C44;
+                text-decoration: none;
+                font-size: 40px;
+                
+            }
+            .position{
+                text-align: right;
+                position: absolute;
+                right: 0%;
+                bottom: 0%;
+                margin-bottom: 15px;
+                margin-right: 400px;
+            }
+       </style>
+    </head>
+    <body>
+            <p class="text" id="aa"></p>
+            <div style="display:none" class="text" id="w">
+                    In A.D. 675, April. Tang Dynasty. 
+
+                    Outside of the Crown Prince Hong’s Hebi Palace, flowers flourish, another spring finally came.  
+
+                    Inside the Hebi Palace, everyone fells in danger. Prince Hong sent people to assassinate the courtier Wen Xueming who is the Empress’s confidant, and his deeds were revealed.
+                    
+                    The Empress Consort Wu Zetian has considerable political power. After Emperor Gaozong's debilitating stroke in A.D. 660, Wu Zetian became administrator of the court, a position equal to the emperor. 
+
+                    Empress Wu and Crown Prince Hong is going to have a drinking game tonight. 
+                    
+            </div>
+            <a href="Dialog1.html" class="position">Continue</a>
+
+            <script>
+               var index=0;
+               var word=document.getElementById("w").innerHTML;
+               function type(){
+                  document.getElementById("aa").innerText = word.substring(0,index++);
+               }
+               setInterval(type, 50);
+            </script>
+    </body>
+</html>

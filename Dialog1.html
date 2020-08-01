@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                display:flex;
+                width:100%;
+                height:100%;
+                background-image: url('game-photos/mist.jfif');
+                background-repeat: no-repeat;
+                background-size: cover;
+                align-items:center;
+                
+            }
+            .display {
+                position: absolute;
+                top: 50%;
+                margin-left: 600px;
+                transform: translate(-50%, -50%);
+                background-color:transparent;
+                color: #2C1C44;
+                font-size: 24px;
+                padding: 100px;
+                border-radius: 10px;
+                border: 3px solid #2C1C44;
+                width: 230px;
+                height: 400px;
+                text-align: center;
+            }
+
+            #display2{
+                top: 90%; 
+                border: none; 
+            }
+
+            .Addbutton{
+            position:absolute;
+            transform: translate(-50%, -50%);
+            background-color:transparent;
+            color: #2C1C44;
+            font-size: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 3px solid #2C1C44;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            }
+            .position1{
+            
+                position: absolute;
+                left: 0%;
+                bottom: 0%;
+                background-color:transparent;
+                font-size: 23px;
+                margin-bottom: 50px;
+                margin-left: 100px;
+            }
+
+            .imageEmpress{
+                margin-left: 100px;
+                margin-top: -150px;
+            }
+            .imagePrince{
+                margin-left: 550px;
+                margin-top: 200px;
+            }
+            a{
+                color:#2C1C44;
+                text-decoration: none;
+                font-size: 30px; 
+            }
+            .position2{
+                text-align: right;
+                position: absolute;
+                right: 0%;
+                bottom: 0%;
+                margin-bottom: 50px;
+                margin-right: 100px;
+            }
+        </style>
+    </head>
+    <body>
+            
+        <img src = "game-photos/smallempress.png" class ="imageEmpress">  
+        <img src = "game-photos/prince.jpg" class="imagePrince"> 
+
+        <a href = "pagecups.html" class="position2">Choose Wine</a>
+        <div>
+        <button class="position1" id="Addbutton">Dialogue</button>
+        </div>
+        <div class="display" id="display"></div>
+        <div class="display" id="display2"></div>
+
+
+        <script>
+            var display = document.getElementById('display');
+            var display2 = document.getElementById('display2');
+            var Addbutton = document.getElementById('Addbutton');
+            var i=0;
+var dialogs = [
+    'Empress Wu: Hong, how dare you! You killed my trustful Courtier Ming Xuewen!',
+    'Prince Hong: Because Ming Xuewen has an improper relationship with you. He is an immoral warlock!',
+    'Empress Wu: How can you believe this kind of rumors! I could also say you and the Prime Minister Pei Yan formed an alliance, intending to usurp the throne. ',
+    'Prince Hong: This is not true! We cannot influence your power.',
+    'Empress Wu: Your Hebi Palace is already a small court.',
+    'Empress Wu: And why did you speak for Xiao Shufei’s two daughters! She was my enemy! You may think I am cruel, but if you’re too merciful to the enemy, there won’t be any opportunity to survive!',
+    'Prince Hong: You already killed their mother Xiao Shufei. They are my half-sisters and they are the children of our Li family!',
+    'Empress Wu: Don’t mention your Li Family! That’s you and your father’s surname, not mine! I will one day make my Wu family’s surname be remembered in the history forever!',
+    'Prince Hong: Mother! You are too ambitious!',
+    'Empress: You are too weak, my son! There are four cups of wine, one of them with poison in it. Take one and drink!  If you die, your sin deserve it.',
+];
+    
+    Addbutton.onclick = function() {
+        
+        display.innerText = dialogs[i];
+        display2.innerText = dialogs[i+1];
+        i++; 
+        i++;
+    } 
+        </script>
+    </body>
+</html>
